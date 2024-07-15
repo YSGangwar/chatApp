@@ -7,7 +7,6 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import { useEffect, useState } from 'react';
 import { json } from 'react-router-dom';
 import axios from 'axios';
-
  export const Home = () => {
   const [ user , setUser ] = useState<UserDetails | null> ();
   const [conversation , setConverstion] = useState([]);
