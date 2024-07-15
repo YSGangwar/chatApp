@@ -1,0 +1,11 @@
+import express from "express";
+import { authController } from "../controller/index.js";
+const router = express.Router();
+router.post("/signup", authController.signUp);
+router.post("/conversations",authController.conversation);
+router.post("/login", authController.login);
+router.get("/conversation/:userId",authController.conversationUserId);
+router.post("/message",authController.message);
+router.get("/message/:conversationId", authController.messageConversationId);
+router.get("/users", authController.users);
+export default router;

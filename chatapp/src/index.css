@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+  }
+
+.custom-img-login {
+    background-image: url(../src/images/img.jpg);
+}
